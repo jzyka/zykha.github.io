@@ -1,0 +1,759 @@
+:root {
+    --yankees-blue: #132F3A;
+    --police-blue: #2D5D61;
+    --white: #ffffff;
+    --black: #000000;
+    --rajah: #F9B75D;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    /* width: 100vw; */
+    overflow-x: hidden;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.py-10 {
+    padding: 40px 0;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-4 {
+    margin-top: 16px;
+}
+
+p {
+    margin: 0;
+    color: var(--yankees-blue);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+section {
+    position: relative;
+    top: -1px;
+    background-color: #FBF5F1;
+    background-image: url(../assets/noise.svg);
+    background-size: cover;
+}
+
+.green-btn {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--police-blue);
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    box-shadow: 10px 10px 100px #2D5D61;
+    width: fit-content;
+}
+
+.section-title   {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 4px solid var(--police-blue);
+    margin-bottom: 4rem;
+    width: fit-content;
+}
+
+
+/* Header Start*/
+header {
+    background: none;
+    padding: 1.5rem 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+}
+
+.hamburger {
+    display: none;
+}
+
+header .header-contain {
+    width: 100%;
+}
+
+header .header-contain nav {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header-contain .nav-section {
+    display: flex;
+    gap: 2rem;
+}
+
+header .header-contain .contact-link {
+    display: flex;
+    gap: 1rem;
+}
+
+header .header-contain .contact-link a i {
+    font-size: 1.7rem;
+    color: var(--police-blue);
+}
+
+header .header-contain nav  a {
+    color: var(--yankees-blue);
+    text-decoration: none;
+    font-weight: 500;
+}
+header .header-contain nav a:active {
+    color: var(--police-blue);
+}
+/* Header End */
+
+/* Jumbotron Start*/
+.jumbotron-all {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.jumbotron-all .wrapper {
+    z-index: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbotron {
+    display: flex;
+    width: 100%;
+}
+
+.scroll-down {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.jumbotron article {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.jumbotron .personal-portrait {
+    width: 35%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jumbotron .name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.jumbotron .personal-portrait img {
+    width: 80%;
+}
+
+.jumbotron .hello {
+    color: var(--yankees-blue);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.jumbotron h1 {
+    font-size: 2rem;
+    margin: 0.4rem 0;
+    color: var(--yankees-blue);
+}
+
+.jumbotron .job-title {
+    color: var(--black);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.jumbotron-background {
+    min-height: 100vh;
+    position: absolute;
+    background-color: #FBF5F1;
+    z-index: 1;
+    max-width: 100%;
+}
+
+.jumbotron-bg-contain {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.jumbotron-background .noise {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.jumbotron-background .circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.circle.green {
+    position: absolute;
+    background: #96B6B3;
+    filter: blur(100px);
+}
+
+.circle.orange {
+    position: absolute;
+    background: rgb(231, 188, 148);
+    filter: blur(100px);
+}
+
+.circle.one {
+    left: -5%;
+    top: -5%;
+}
+
+.circle.two {
+    top: 55%;
+    left: 30%;
+}
+
+.circle.three {
+    top: 15%;
+    left: 55%;
+}
+
+.circle.four {
+    left: 80%;
+    top: 40%;
+}
+
+.about-me {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+/* Jumbotron End */
+
+/* About Me Start */
+.about-me .title-article {
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about-me .wrapper {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me article {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+/* About Me End */
+
+/* Skills Start */
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+.skill-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 1rem;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    word-wrap: break-word;
+}
+/* Skills End */
+
+/* Project Start */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--yankees-blue);
+}
+
+.project-type {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.project-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 2%;
+}
+
+.project-card {
+    width: 29%;
+    margin-bottom: 30px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height: 400px;
+}
+
+#project-card-ui {
+    height: 350px;
+}
+
+.project-card:hover {
+    box-shadow: 0px 1px 10px var(--police-blue);
+}
+
+.project-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    border: 2px solid #d4d4d4;
+    object-fit: cover;
+}
+
+.no-project-link {
+    margin-top: auto;
+    margin-left: auto;
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #d4d4d4;
+}
+
+.project-name {
+    color: var(--yankees-blue);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    /* margin-bottom: 5px; */
+}
+
+.project-tools {
+    color: #656565;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.see-project {
+    margin-top: auto;
+    margin-left: auto;
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: var(--police-blue);
+}
+/* Project End */
+
+/* Footer Start */
+footer {
+    background-color: var(--police-blue);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.footer-content .contact {
+    width: 50%;
+}
+
+.footer-content .contact .contact-text {
+    color: #FBF5F1;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+
+.content-title {
+    color: #FBF5F1;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footer .sections {
+    width: 30%;
+    margin-left: auto;
+}
+
+.footer .sections nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .sections nav a {
+    display: flex;
+    flex-direction: column;
+    color: #FBF5F1;
+    text-decoration: none;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    color: #FBF5F1;
+    margin-top: 2rem;
+    font-weight: 300;
+}
+
+.footer .socmed {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer .socmed a {
+    color: #FBF5F1;
+    font-size: 1.5rem;
+}
+/* Footer End */
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+
+    /* Jumbotron Responsive Start */
+    .jumbotron-all .wrapper {
+        min-height: 50vh;
+    }
+
+    .jumbotron-background {
+        min-height: 50vh;
+    }
+
+    .jumbotron-bg-contain {
+        height: 50vh;
+    }
+
+    .jumbotron-background .noise {
+        height: 50vh;
+    }
+    /* Jumbotron Responsive End */
+
+    /* Projects Responsive Start */
+    .project-cards {
+        gap: 3%;
+    }
+
+    .project-card {
+        margin-bottom: 1rem;
+        width: 28%;
+    }
+    /* Projects Responsive End */
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .green-btn {
+        font-size: 14px;
+        padding: 0.5rem 1rem;
+        box-shadow: 10px 5px 60px #2D5D61;
+    }
+
+    /* Jumbotron Responsive Start */
+    .jumbotron .hello {
+        font-size: 18px;
+    }
+
+    .jumbotron h1 {
+        font-size: 1.5rem;
+    }
+    .jumbotron .job-title {
+        font-size: 20px;
+    }
+
+    .jumbotron-background .circle {
+        height: 150px;
+        width: 150px;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+    /* Jumbotron Responsive End */
+
+    /* About Me Responsive Start */
+    .moto {
+        text-align: center;
+    }
+    /* About Me Responsive End */
+
+    /* Skills Responsive Start */
+    .skill-card img {
+        height: 110px;
+    }
+    /* Skills Responsive End */
+
+    /* Projects Responsive Start */
+    .project-cards {
+        gap: 2%;
+    }
+
+    .project-card {
+        width: 44%;
+    }
+    /* Projects Responsive End */
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        margin: 0 1rem;
+    }
+
+    /* Header Responsive Start */
+    header .row {
+        flex-direction: column;
+    }
+
+    .hamburger {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--police-blue);
+        border: none;
+        margin-left: auto;
+    }
+
+    .hamburger i {
+        font-size: 1.3rem;
+        color: #FBF5F1;
+    }
+
+    .hamburger:focus-visible {
+        outline: none;
+        border: none;
+    }
+
+    .header-contain {
+        display: none;
+    }
+
+    .header-contain.active {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: #FBF5F1;
+        width: fit-content !important;
+        margin-left: auto;
+        margin-top: 1rem;
+    }
+
+    .header-contain nav {
+        /* display: none; */
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .header-contain nav a {
+        text-align: center;
+    }
+
+    .nav-section {
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+    }
+    /* Header Responsive End */
+
+    /* Jumbotron Responsive Start */
+    .jumbotron-background .circle {
+        height: 100px;
+        width: 100px;
+    }
+
+    .circle.four {
+        left: 50%;
+        top: 10%;
+    }
+
+    .jumbotron-all .wrapper {
+        min-height: 90vh;
+    }
+
+    .jumbotron-background {
+        min-height: 90vh;
+    }
+
+    .jumbotron-bg-contain {
+        height: 90vh;
+    }
+
+    .jumbotron-background .noise {
+        height: 90vh;
+    }
+    
+    .jumbotron {
+        flex-direction: column;
+    }
+
+    .jumbotron article {
+        width: 100%;
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+    .jumbotron article h1 {
+        text-align: center;
+    }
+
+    .jumbotron .personal-portrait {
+        width: 75%;
+        margin-top: 3rem;
+    }
+    /* Jumbotron Responsive End */
+
+    /* About Me Responsive Start */
+    .about-me .wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-me article {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .about-me article .self-desc {
+        text-align: center;
+    }
+    /* About Me Responsive End */
+
+    /* Projects Responsive Start */
+
+    .project-card {
+        width: 100%;
+    }
+    /* Projects Responsive End */
+
+    /* Footer Responsive Start */
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content .contact {
+        width: 100%;
+    }
+
+    .footer .sections {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    /* Footer Responsive End */
+}
+
+@media only screen and (max-width: 320px) {
+    /* Jumbotron Responsive Start */
+    .jumbotron-all .wrapper {
+        min-height: 100vh;
+    }
+
+    .jumbotron-background {
+        min-height: 100vh;
+    }
+
+    .jumbotron-bg-contain {
+        height: 100vh;
+    }
+
+    .jumbotron-background .noise {
+        height: 100vh;
+    }
+    /* Jumbotron Responsive End */
+
+}
